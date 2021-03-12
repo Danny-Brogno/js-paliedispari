@@ -11,31 +11,33 @@
 
 function function1 (oddOrEven, numberChoice, pcNumber) {
 
-  var oddOrEven = prompt("Please choose between: odd or even");
-  var numberChoice = parseInt(prompt("please choose a number from 1 to 5"));
-  var pcNumber = Math.floor(Math.random() * 6 + 1);
-
   console.log("User chose " + oddOrEven + " and has chosen " + numberChoice + " for number. " + "The random number generated for the pc is " + pcNumber);
 
-  // if ((oddOrEven == "odd") && (oddOrEven == "even")) {
-  //   console.log("choice accepted")
-  //
-  // } else {
-  //   alert("The choices are 'odd' or 'even', please refresh the page to try again.");
-  // }
+  if ((oddOrEven == "odd") || (oddOrEven == "even")) {
+    console.log("choice accepted");
 
-  if (numberChoice < 6) {
-    console.log(oddOrEven, numberChoice);
+    if (numberChoice < 6) {
+      console.log(oddOrEven, numberChoice);
 
-  } else if (numberChoice >= 6) {
-    console.log(oddOrEven, numberChoice);
-    alert("Insert a number from 1 to 5, please refresh the page to try again.");
+      var sum = numberChoice + pcNumber;
+      var odd = sum % 2 == 1;
+      var even = sum % 2 == 0;
+
+    } else if (numberChoice >= 6) {
+      console.log(oddOrEven, numberChoice);
+      alert("Insert a number from 1 to 5, please refresh the page to try again.");
+    }
+
+  } else {
+    alert("The choices are 'odd' or 'even', please refresh the page to try again.");
   }
-
-  var sum = numberChoice + pcNumber;
-  var odd = sum % 2 == 1;
-  var even = sum % 2 == 0;
 
 }
 
-function1();
+var oddOrEvenUser = prompt("Please choose between: odd or even");
+var numberUserChoice = parseInt(prompt("please choose a number from 1 to 5"));
+var pcRndNumber = Math.floor(Math.random() * 6 + 1);
+
+function1(oddOrEvenUser, numberUserChoice, pcRndNumber);
+
+// CREATE A FUNCTION THAT GENERATES A RANDOM NUMBER AND USE IT TO PINPOST/ASSIGN A VALUE TO THE VARIABLE "pcRndNumber"
