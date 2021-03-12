@@ -9,3 +9,13 @@
 ul {
   list-style: none;
 }
+
+body {
+  background-color: navy;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
