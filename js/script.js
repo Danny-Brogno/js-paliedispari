@@ -63,3 +63,54 @@ var numberUserChoice = parseInt(prompt("please choose a number from 1 to 5"));
 var pcRndNumber = numberGeneratorPc(0, 5);
 
 function1(oddOrEvenUser, numberUserChoice, pcRndNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function isPalindrom(word) {
+//   var lng = word.length;
+//   var paLng = Math.floor(lng / 2);
+//
+//   for (var i=0; i<palLng; i++) {
+//
+//     var finalI = lng - i - 1;
+//     var charI = word.charAt(i);
+//     varCharFinalI = word.charAt(finalI);
+//
+//     if (charI != charFinalI) {
+//       return false;
+//     }
+//
+//     return true;
+//   }
+// }
+//
+// function es1() {
+//
+//   var word = "hello";
+//   var isWordPalindrom = ispalindrom(word);
+//
+//   console.log(word, isWordPalindrom);
+// }
+//
+// es1();
+
+// un for che crea i numeri,  con annidato un for che verifica se il numero è stato usato prima di pusharlo dentro l'array
